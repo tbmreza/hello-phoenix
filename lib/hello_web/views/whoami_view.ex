@@ -5,11 +5,9 @@ defmodule HelloWeb.WhoamiView do
     %{software: software, ipaddress: ipaddress, language: language} = params
 
     %{
-      data: %{
-        ipaddress: ipaddress,
-        language: language,
-        software: software
-      }
+      ipaddress: ipaddress,
+      language: language,
+      software: software
     }
   end
 end
