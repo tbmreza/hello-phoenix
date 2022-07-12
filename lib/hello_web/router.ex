@@ -23,6 +23,7 @@ defmodule HelloWeb.Router do
   # Other scopes may use custom stacks.
   scope "/api", HelloWeb do
     pipe_through :api
+    get "/whoami/", WhoamiController, :show
     get "/:stamp", TimeController, :show
   end
 
